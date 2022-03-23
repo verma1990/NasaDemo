@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842D90C027EB079D00F00D72 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D90BF27EB079D00F00D72 /* Reachability.swift */; };
 		8471086627E99CE40094CD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471086527E99CE40094CD40 /* AppDelegate.swift */; };
 		8471086827E99CE40094CD40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471086727E99CE40094CD40 /* SceneDelegate.swift */; };
-		8471086A27E99CE40094CD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471086927E99CE40094CD40 /* ViewController.swift */; };
+		8471086A27E99CE40094CD40 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471086927E99CE40094CD40 /* HomeViewController.swift */; };
 		8471086D27E99CE40094CD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8471086B27E99CE40094CD40 /* Main.storyboard */; };
 		8471086F27E99CE50094CD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8471086E27E99CE50094CD40 /* Assets.xcassets */; };
 		8471087227E99CE50094CD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8471087027E99CE50094CD40 /* LaunchScreen.storyboard */; };
 		8471087D27E99CE50094CD40 /* NasaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471087C27E99CE50094CD40 /* NasaDemoTests.swift */; };
 		8471088727E99CE60094CD40 /* NasaDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471088627E99CE60094CD40 /* NasaDemoUITests.swift */; };
 		8471088927E99CE60094CD40 /* NasaDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471088827E99CE60094CD40 /* NasaDemoUITestsLaunchTests.swift */; };
+		8471089A27E99EB30094CD40 /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471089827E99EB30094CD40 /* HttpUtility.swift */; };
+		8471089F27E99FA80094CD40 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471089D27E99FA80094CD40 /* UITextField.swift */; };
+		847108A027E99FA80094CD40 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471089E27E99FA80094CD40 /* UIImageView.swift */; };
+		847108A327E9A3340094CD40 /* NasaResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847108A227E9A3340094CD40 /* NasaResource.swift */; };
+		847108A827E9A3630094CD40 /* NasaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847108A627E9A3630094CD40 /* NasaRequest.swift */; };
+		847108A927E9A3630094CD40 /* NasaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847108A727E9A3630094CD40 /* NasaResponse.swift */; };
+		847108AC27E9A6E80094CD40 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847108AB27E9A6E80094CD40 /* Common.swift */; };
+		847108AF27E9A7130094CD40 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847108AE27E9A7130094CD40 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842D90BF27EB079D00F00D72 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		8471086227E99CE40094CD40 /* NasaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8471086527E99CE40094CD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8471086727E99CE40094CD40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8471086927E99CE40094CD40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8471086927E99CE40094CD40 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8471086C27E99CE40094CD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8471086E27E99CE50094CD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8471087127E99CE50094CD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,14 @@
 		8471088227E99CE60094CD40 /* NasaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8471088627E99CE60094CD40 /* NasaDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDemoUITests.swift; sourceTree = "<group>"; };
 		8471088827E99CE60094CD40 /* NasaDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8471089827E99EB30094CD40 /* HttpUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		8471089D27E99FA80094CD40 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		8471089E27E99FA80094CD40 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		847108A227E9A3340094CD40 /* NasaResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaResource.swift; sourceTree = "<group>"; };
+		847108A627E9A3630094CD40 /* NasaRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaRequest.swift; sourceTree = "<group>"; };
+		847108A727E9A3630094CD40 /* NasaResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaResponse.swift; sourceTree = "<group>"; };
+		847108AB27E9A6E80094CD40 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		847108AE27E9A7130094CD40 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842D90BE27EB075F00F00D72 /* NetworkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				842D90BF27EB079D00F00D72 /* Reachability.swift */,
+			);
+			path = NetworkReachability;
+			sourceTree = "<group>";
+		};
 		8471085927E99CE40094CD40 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +127,15 @@
 			children = (
 				8471086527E99CE40094CD40 /* AppDelegate.swift */,
 				8471086727E99CE40094CD40 /* SceneDelegate.swift */,
-				8471086927E99CE40094CD40 /* ViewController.swift */,
+				8471086927E99CE40094CD40 /* HomeViewController.swift */,
 				8471086B27E99CE40094CD40 /* Main.storyboard */,
+				842D90BE27EB075F00F00D72 /* NetworkReachability */,
+				847108AD27E9A7130094CD40 /* ViewModels */,
+				847108AA27E9A6E80094CD40 /* Common */,
+				847108A427E9A3630094CD40 /* Model */,
+				8471089C27E99FA80094CD40 /* Extentions */,
+				8471089727E99EB30094CD40 /* Services */,
+				847108A127E9A3340094CD40 /* DataResources */,
 				8471086E27E99CE50094CD40 /* Assets.xcassets */,
 				8471087027E99CE50094CD40 /* LaunchScreen.storyboard */,
 				8471087327E99CE50094CD40 /* Info.plist */,
@@ -125,6 +158,57 @@
 				8471088827E99CE60094CD40 /* NasaDemoUITestsLaunchTests.swift */,
 			);
 			path = NasaDemoUITests;
+			sourceTree = "<group>";
+		};
+		8471089727E99EB30094CD40 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8471089827E99EB30094CD40 /* HttpUtility.swift */,
+			);
+			name = Services;
+			path = "../../../Downloads/NasaApod-main/NasaApod/Services";
+			sourceTree = "<group>";
+		};
+		8471089C27E99FA80094CD40 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				8471089D27E99FA80094CD40 /* UITextField.swift */,
+				8471089E27E99FA80094CD40 /* UIImageView.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		847108A127E9A3340094CD40 /* DataResources */ = {
+			isa = PBXGroup;
+			children = (
+				847108A227E9A3340094CD40 /* NasaResource.swift */,
+			);
+			path = DataResources;
+			sourceTree = "<group>";
+		};
+		847108A427E9A3630094CD40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				847108A627E9A3630094CD40 /* NasaRequest.swift */,
+				847108A727E9A3630094CD40 /* NasaResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		847108AA27E9A6E80094CD40 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				847108AB27E9A6E80094CD40 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		847108AD27E9A7130094CD40 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				847108AE27E9A7130094CD40 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +342,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8471086A27E99CE40094CD40 /* ViewController.swift in Sources */,
+				8471089A27E99EB30094CD40 /* HttpUtility.swift in Sources */,
+				847108A327E9A3340094CD40 /* NasaResource.swift in Sources */,
+				8471086A27E99CE40094CD40 /* HomeViewController.swift in Sources */,
+				847108A027E99FA80094CD40 /* UIImageView.swift in Sources */,
+				847108AC27E9A6E80094CD40 /* Common.swift in Sources */,
 				8471086627E99CE40094CD40 /* AppDelegate.swift in Sources */,
+				847108AF27E9A7130094CD40 /* HomeViewModel.swift in Sources */,
+				847108A827E9A3630094CD40 /* NasaRequest.swift in Sources */,
+				847108A927E9A3630094CD40 /* NasaResponse.swift in Sources */,
 				8471086827E99CE40094CD40 /* SceneDelegate.swift in Sources */,
+				8471089F27E99FA80094CD40 /* UITextField.swift in Sources */,
+				842D90C027EB079D00F00D72 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +539,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +567,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
